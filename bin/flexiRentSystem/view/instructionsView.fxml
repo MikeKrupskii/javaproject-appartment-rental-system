@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="744.0" prefWidth="1160.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flexiRentSystem.controller.InstructionsController">
+   <children>
+      <Label layoutX="398.0" layoutY="46.0" text="Flexi Rent System specifications:" textFill="#0817e4">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Text layoutX="181.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Premium Suit has to have its maintenance performed EVERY 10th day">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="181.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are not allowed to book a property once it's being maintained or rented by other customers ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="181.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are not allowed to book a property again once you've already rented it, unless you return it first">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="181.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you wish to import or export data, to see what EXACTLY should the format be, view this example below:  ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="181.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A_137CSMEL:137:City Street:Melbourne:Appartment:1:Available:No Image Available:No description available">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="goBackBtn" layoutX="462.0" layoutY="633.0" mnemonicParsing="false" onAction="#goBack" prefHeight="48.0" prefWidth="149.0" text="GO BACK" textFill="#0e18da">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flexiRentSystem.controller.MainViewController">
+   <children>
+      <AnchorPane fx:id="wrapper" prefHeight="900.0" prefWidth="1200.0">
+         <children>
+            <Line endX="1070.0" layoutX="129.0" layoutY="100.0" startX="-130.0" />
+            <Label layoutX="955.0" layoutY="46.0" text="Flexi Rent System" textFill="#0a07bc">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <MenuBar prefHeight="31.0" prefWidth="1200.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#importData" text="Import" />
+                        <MenuItem mnemonicParsing="false" onAction="#exportData" text="Export" />
+                        <MenuItem mnemonicParsing="false" onAction="#quitProgram" text="Quit" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openInstructionsWindow" text="Instructions" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ScrollPane layoutX="14.0" layoutY="114.0" prefHeight="744.0" prefWidth="1162.0">
+              <content>
+                <AnchorPane fx:id="mainContent" minHeight="0.0" minWidth="0.0" />
+              </content>
+            </ScrollPane>
+            <ComboBox fx:id="choiceByStatus" layoutX="714.0" layoutY="46.0" prefHeight="40.0" prefWidth="201.0" promptText="Status" />
+            <ComboBox fx:id="choiceByBedrooms" layoutX="399.0" layoutY="46.0" prefHeight="40.0" prefWidth="262.0" promptText="Number of bedrooms" />
+            <ComboBox fx:id="choiceByType" layoutX="177.0" layoutY="46.0" prefHeight="40.0" prefWidth="181.0" promptText="Property type" />
+            <Label fx:id="searchLabel" layoutX="26.0" layoutY="50.0" prefHeight="24.0" prefWidth="137.0" text="Search by" textFill="#0b38da">
+               <font>
+                  <Font size="19.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
