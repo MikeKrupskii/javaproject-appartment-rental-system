@@ -1,6 +1,6 @@
 # javaproject-appartment-rental-system
 Flexi Rent Java Project
-/**********************************/
+
 This is a FlexiRent System project, that was developed to learn the most out of JavaFx and MVC Design Pattern. 
 
 The project is divided into 4 packages - Model, View, Controller, Service. 
